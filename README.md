@@ -56,8 +56,6 @@ Because this project involved a simulated healthcare environment and confidentia
 - Patient names or medical information
 - Original patient PDF reports
 - Recovered PDF contents
-- Recovered passwords
-- Password hashes
 - Session cookies or session IDs
 - Employee names or personally identifiable information
 - Employee salaries
@@ -185,11 +183,19 @@ The assessment subsequently demonstrated an authorized exploitation path that al
 
 Sanitized screenshots are available under:
 
-- `M1-Initial-Access/screenshots/01-patient-portal-login.png`
-- `M1-Initial-Access/screenshots/02-lab-reports-accessed.png`
-- `M1-Initial-Access/screenshots/03-gobuster-enumeration.png`
-- `M1-Initial-Access/screenshots/04-source-code-paths-1.png`
-- `M1-Initial-Access/screenshots/05-source-code-paths-2.png`
+### Patient Portal Login
+![Patient Portal Login](Screenshots/01-patient-portal-login.png)
+
+### Successful Access to Lab Reports
+![Lab Reports Accessed](Screenshots/02-lab-reports-accessed.png)
+
+### Directory Enumeration
+![Gobuster Enumeration](Screenshots/03-gobuster-enumeration.png)
+
+### Source Code Revealing Login Paths
+![Source Code Paths](Screenshots/04-source-code-paths-1.png)
+
+![Source Code Paths](Screenshots/05-source-code-paths-2.png)
 
 Sensitive patient information has been excluded from this public repository.
 
@@ -245,14 +251,25 @@ The ability to recover passwords for all three encrypted PDF reports using passw
 
 Sanitized evidence is available under:
 
-- `M2-PDF-Password-Recovery/screenshots/01-networkwalks-cracker-report-1.png`
-- `M2-PDF-Password-Recovery/screenshots/02-networkwalks-cracker-report-2.png`
-- `M2-PDF-Password-Recovery/screenshots/03-pdfcrack-success-report-3.png`
-- `M2-PDF-Password-Recovery/screenshots/04-decrypted-report-1-sanitized.png`
-- `M2-PDF-Password-Recovery/screenshots/05-decrypted-report-2-sanitized.png`
-- `M2-PDF-Password-Recovery/screenshots/06-decrypted-report-3-sanitized.png`
+### NetworkWalks Password Cracker – Report 1
+![NetworkWalks Cracker](Screenshots/01-networkwalks-cracker-report-1.png)
 
-> Patient names, medical information, recovered passwords, and sensitive PDF contents are intentionally excluded.
+### NetworkWalks Password Cracker – Report 2
+![NetworkWalks Cracker](Screenshots/02-networkwalks-cracker-report-2.png)
+
+### pdfcrack Success – Report 3
+![pdfcrack Success](Screenshots/03-pdfcrack-success-report-3.png)
+
+### Decrypted Report 1
+![Pathology Decrypted Report - 1](Screenshots/04-decrypted-report-1-sanitized.png)
+
+### Decrypted Report 2
+![Pathology Decrypted Report - 2](Screenshots/05-decrypted-report-2-sanitized.png)
+
+### Decrypted Report 3
+![Pathology Decrypted Report - 3](Screenshots/06-decrypted-report-3-sanitized.png)
+
+> Patient names, medical information, and sensitive PDF contents are intentionally excluded.
 
 ## 🗄️ M3 — Sensitive Data Exposure
 
@@ -302,9 +319,14 @@ An exposed database backup can provide an attacker with structured information t
 
 Sanitized evidence is available under:
 
-- `M3-Data-Exposure/screenshots/01-old-directory-index.png`
-- `M3-Data-Exposure/screenshots/02-staff-table-sanitized.png`
-- `M3-Data-Exposure/screenshots/03-shareholder-table-sanitized.png`
+### Exposed Database Backup Directory
+![Index of /old/](Screenshots/01-old-directory-index.png)
+
+### Staff Salaries in Database Dump
+![Staff Salaries Dump](Screenshots/02-staff-table-sanitized.png)
+
+### Shareholder Details in Database Dump
+![Shareholders Dump](Screenshots/03-shareholder-table-sanitized.png)
 
 The original database backup is not included in this public repository.
 
@@ -508,8 +530,6 @@ The following materials remain private and are not committed to GitHub:
 ❌ Patient PDF files  
 ❌ Patient medical information  
 ❌ Recovered PDF contents  
-❌ Recovered passwords  
-❌ Password hashes  
 ❌ Database dump  
 ❌ Employee personal information  
 ❌ Employee salary records  
